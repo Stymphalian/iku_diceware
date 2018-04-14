@@ -119,7 +119,7 @@ func main() {
 		// might be picked again
 		for i := 0; i < *FnumUppers; i++ {
 			wordIndex := RandRange(0, len(passphrase))
-			passphrase[wordIndex] = strings.ToTitle(passphrase[wordIndex])
+			passphrase[wordIndex] = strings.Title(passphrase[wordIndex])
 		}
 
 		// add special characters if required
@@ -140,5 +140,3 @@ func main() {
 		fmt.Println()
 	}
 }
-
-
